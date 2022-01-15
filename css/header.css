@@ -1,0 +1,77 @@
+.header {
+  position: relative;
+  position: sticky;
+  top: 0;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: 80px;
+  background: #fff;
+  z-index: 1;
+}
+.logo {
+  color: var(--alt-color);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.btn-menu i {
+  font-size: 2.5rem;
+}
+
+nav {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  inline-size: 0;
+  block-size: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  transition: opacity 0.25s ease-in, inline-size 0s 0.25s, right 0s 0.25s;
+  opacity: 0;
+}
+.mostrar {
+  inline-size: 300px;
+  transition: opacity 0.25s ease-out, inline-size;
+  opacity: 1;
+}
+nav ul {
+  position: relative;
+  margin-inline-start: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+nav ul li {
+  padding: 8px;
+}
+
+nav ul li:hover {
+  background: red;
+  cursor: pointer;
+}
+nav ul li:hover > a {
+  color: #fff;
+}
+
+nav ul li a {
+  font-size: 24px;
+  text-transform: capitalize;
+  color: var(--overlay);
+}
+
+@media screen and (min-width: 768px) {
+  .btn-menu {
+    display: none;
+  }
+  nav {
+    opacity: 1;
+    block-size: 100%;
+    inline-size: 100%;
+    justify-content: flex-end;
+    position: initial;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+}

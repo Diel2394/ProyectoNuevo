@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Refra</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <nav class="nav">
-        <div class="nav-wrapper">
-            <div class="container">
-                <a href="#!" class="brand-logo brand">Reframetal</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down menu">
-                  <li><a href="#">Inicio</a></li>
-                  <li><a href="#">Galeria</a></li>
-                  <li><a href="#">productos</a></li>
-                  <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-          
-        </div>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/materialize.min.css" /> -->
+  </head>
+  <body>
+    <header class="header wrapper">
+      <a href="/" class="logo">Reframetal</a>
+      <nav id="menu">
+        <ul>
+          <li><a href="#">inicio</a></li>
+          <li><a href="#">galería</a></li>
+          <li><a href="#">productos</a></li>
+          <li><a href="#">contacto</a></li>
+        </ul>
       </nav>
-    
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">productos</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
+      <button class="btn-menu" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+
     <main class="main-info">
-        <div class="absolute-title">
-            <h3>Reframetal</h3>
-        
-        </div>
-        <div class="container">
-            <div>
-                <h1><span>Materiales Tecnicos </span> Refractarios</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic expedita aliquid reprehenderit corporis vero consectetur doloribus dolorum, earum quibusdam non, minus animi dolorem est. Non eveniet modi quaerat dolor.</p>
-                <button class="btn-info">Read More</button>
-            </div>
-            <img src="img/bg.png" alt="Reframetal">
-        </div>
-
-    </main>
-<article class="overlay-section">
-    <div class="overlay">
-        <div class="container">
-            <h3>Compra lo nuesro</h3>
-            <h2>Apoya el material colombiano</h2>
-        </div>
-    </div>
-
-</article>
-<article class="products" id="products">
-    <section class="product-title">
-        <h2>Nuestros Productos</h2>
-    <div class="divider"></div>
-    </section>
-    
-    <div class="carousel">
-        <a class="carousel-item" href="#one!"><img src="./img/products/7.png"></a>
-        <a class="carousel-item" href="#two!"><img src="./img/products/bateria1.png"></a>
-        <a class="carousel-item" href="#three!"><img src="./img/products/bateria3.png"></a>
-        <a class="carousel-item" href="#four!"><img src="./img/products/bateria4.png"></a>
-        <a class="carousel-item" href="#five!"><img src="./img/products/bateria6.png"></a>
+      <div class="absolute-title">
+        <h3>Reframetal</h3>
       </div>
-</article>
+      <div class="container">
+        <div>
+          <h1><span>Materiales Tecnicos </span> Refractarios</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic
+            expedita aliquid reprehenderit corporis vero consectetur doloribus
+            dolorum, earum quibusdam non, minus animi dolorem est. Non eveniet
+            modi quaerat dolor.
+          </p>
+          <button class="btn-info">Read More</button>
+        </div>
+        <!-- <img src="img/bg.png" alt="Reframetal" /> -->
+      </div>
+    </main>
+    <article class="overlay-section">
+      <div class="overlay">
+        <div class="container">
+          <h3>Compra lo nuesro</h3>
+          <h2>Apoya el material colombiano</h2>
+        </div>
+      </div>
+    </article>
+    <article class="products" id="products">
+      <section class="product-title">
+        <h2>Nuestros Productos</h2>
+        <div class="divider"></div>
+      </section>
 
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"
+          ><img src="./img/products/7.png"
+        /></a>
+        <a class="carousel-item" href="#two!"
+          ><img src="./img/products/bateria1.png"
+        /></a>
+        <a class="carousel-item" href="#three!"
+          ><img src="./img/products/bateria3.png"
+        /></a>
+        <a class="carousel-item" href="#four!"
+          ><img src="./img/products/bateria4.png"
+        /></a>
+        <a class="carousel-item" href="#five!"
+          ><img src="./img/products/bateria6.png"
+        /></a>
+      </div>
+    </article>
+    <button class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </button>
 
-
-
-
-<script src="/js/materialize.min.js"></script>
+    <script src="/js/materialize.min.js"></script>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>

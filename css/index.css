@@ -1,0 +1,27 @@
+@import "./header.css";
+@import "./Componentes/wrapper.css";
+@import "./Componentes/boton.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #333;
+  --secundary-color: #444;
+  --alt-color: #af3231;
+  --overlay: rgba(0, 0, 0, 0.8);
+  --container-width: 90vw;
+}
+body {
+  font-family: "catamaran", sans-serif;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
